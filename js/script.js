@@ -12,8 +12,10 @@ scroll.onclick = function() {
 
 home1.onclick = function() {
     document.querySelector('header').style.display = "block";
+    body.style.overflow = 'hidden';
 };
 
 home2.onclick = function() {
     document.querySelector('header').style.display = "block";
+    body.style.overflow = 'hidden';
 };

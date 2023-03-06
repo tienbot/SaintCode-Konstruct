@@ -4,7 +4,8 @@
 
 .container
     margin: 0 auto
-    max-width: 940px
+    max-width: 980px
+    padding: 0 20px
 
 header
     background-image: url(../img/bg_header.jpg)
@@ -56,9 +57,11 @@ header
                 color: #00A4E5
 
 .navigation
-    max-width: 940px
+    max-width: 980px
     margin: 0 auto
+    padding: 0 20px
     display: flex
+    flex-wrap: wrap
     align-items: center
     justify-content: space-between
     height: 65px
@@ -80,21 +83,23 @@ hr
 
 .about
     padding-top: 48px
-    margin-bottom: 127px
+    margin-bottom: 67px
     &_title
         margin-bottom: 92px
         text-align: center
     &_content
         display: flex
         justify-content: space-between
+        flex-wrap: wrap
     &_article
         max-width: 405px
         width: 100%
-        text-align: left
+        margin-bottom: 30px
     &_steps
         display: flex
         justify-content: space-between
-        max-width: 459px
+        flex-wrap: wrap
+        max-width: 480px
         width: 100%
 
 .article
@@ -108,6 +113,8 @@ hr
 
 .step
     position: relative
+    margin-bottom: 30px
+    padding: 0 10px
     &_title
         position: absolute
         color: #fff
@@ -118,30 +125,36 @@ hr
         line-height: 29px
 
 .services
-    margin-bottom: 115px
+    margin-bottom: 85px
     &_top
         display: flex
         justify-content: space-between
-        margin-bottom: 76px
+        flex-wrap: wrap
+        margin-bottom: 46px
     &_title
         max-width: 200px
         width: 100%
+        margin-bottom: 30px
     &_right
         max-width: 587px
         width: 100%
         display: flex
-        justify-content: space-between 
+        justify-content: space-between
+        flex-wrap: wrap
         p
             max-width: 405px
             width: 100%
             font-size: 11px
             line-height: 19px
+            margin-bottom: 30px
     &_bottom
         display: flex
         justify-content: space-between
+        flex-wrap: wrap
     &_card
         padding: 38px 23px
         outline: 1px solid #E6E6E6
+        margin-bottom: 30px
         img
             margin-bottom: 25px
 
@@ -197,6 +210,7 @@ hr
     &_form
         padding: 30px 0
         display: flex
+        flex-wrap: wrap
         align-items: center
         justify-content: space-between
         max-width: 685px
@@ -218,3 +232,47 @@ hr
             margin: 0 auto
             font-weight: 400
             font-size: 11px
+
+@media only screen and (max-width: 924px)
+    .header
+        &_logo
+            margin-bottom: 30vh
+        &_subtitle
+            margin-bottom: 20vh
+
+    .services
+        &_bottom
+            justify-content: space-around
+
+@media only screen and (max-width: 924px) 
+    .about
+        &_content
+            justify-content: center
+
+@media only screen and (max-width: 826px) 
+    .services
+        &_top
+            justify-content: center
+
+@media only screen and (max-width: 614px) 
+    .footer
+        p
+            margin-bottom: 30px
+        &_form
+            justify-content: center
+
+@media only screen and (max-width: 532px) 
+    .navigation
+        justify-content: center
+    .about
+        &_steps
+            justify-content: center
+    
+@media only screen and (max-width: 350px) 
+    .footer
+        &_form
+            form
+                flex-wrap: wrap
+                justify-content: center
+            input
+                margin-bottom: 30px

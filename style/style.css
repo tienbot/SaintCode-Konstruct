@@ -5,7 +5,8 @@
 
 .container {
   margin: 0 auto;
-  max-width: 940px;
+  max-width: 980px;
+  padding: 0 20px;
 }
 
 header {
@@ -66,9 +67,11 @@ header {
 }
 
 .navigation {
-  max-width: 940px;
+  max-width: 980px;
   margin: 0 auto;
+  padding: 0 20px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   height: 65px;
@@ -93,7 +96,7 @@ hr {
 
 .about {
   padding-top: 48px;
-  margin-bottom: 127px;
+  margin-bottom: 67px;
 }
 .about_title {
   margin-bottom: 92px;
@@ -102,16 +105,18 @@ hr {
 .about_content {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .about_article {
   max-width: 405px;
   width: 100%;
-  text-align: left;
+  margin-bottom: 30px;
 }
 .about_steps {
   display: flex;
   justify-content: space-between;
-  max-width: 459px;
+  flex-wrap: wrap;
+  max-width: 480px;
   width: 100%;
 }
 
@@ -127,6 +132,8 @@ hr {
 
 .step {
   position: relative;
+  margin-bottom: 30px;
+  padding: 0 10px;
 }
 .step_title {
   position: absolute;
@@ -139,36 +146,42 @@ hr {
 }
 
 .services {
-  margin-bottom: 115px;
+  margin-bottom: 85px;
 }
 .services_top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 76px;
+  flex-wrap: wrap;
+  margin-bottom: 46px;
 }
 .services_title {
   max-width: 200px;
   width: 100%;
+  margin-bottom: 30px;
 }
 .services_right {
   max-width: 587px;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .services_right p {
   max-width: 405px;
   width: 100%;
   font-size: 11px;
   line-height: 19px;
+  margin-bottom: 30px;
 }
 .services_bottom {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .services_card {
   padding: 38px 23px;
   outline: 1px solid #E6E6E6;
+  margin-bottom: 30px;
 }
 .services_card img {
   margin-bottom: 25px;
@@ -235,6 +248,7 @@ hr {
 .footer_form {
   padding: 30px 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   max-width: 685px;
@@ -260,6 +274,53 @@ hr {
   margin: 0 auto;
   font-weight: 400;
   font-size: 11px;
+}
+
+@media only screen and (max-width: 924px) {
+  .header_logo {
+    margin-bottom: 30vh;
+  }
+  .header_subtitle {
+    margin-bottom: 20vh;
+  }
+  .services_bottom {
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 924px) {
+  .about_content {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 826px) {
+  .services_top {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 614px) {
+  .footer p {
+    margin-bottom: 30px;
+  }
+  .footer_form {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 532px) {
+  .navigation {
+    justify-content: center;
+  }
+  .about_steps {
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .footer_form form {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer_form input {
+    margin-bottom: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
