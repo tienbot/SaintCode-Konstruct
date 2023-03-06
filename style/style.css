@@ -53,6 +53,9 @@ header {
   color: #fff;
   font-weight: 700;
 }
+.header_link a:hover {
+  color: #00A4E5;
+}
 
 .navigation {
   max-width: 940px;
@@ -68,6 +71,9 @@ header {
   flex-direction: row;
   max-width: 412px;
   width: 100%;
+}
+.navigation_navbar a:hover {
+  color: #00A4E5;
 }
 
 hr {
