@@ -1,0 +1,126 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  color: #48555B;
+}
+
+header {
+  background-image: url(../img/bg_header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  height: 100%;
+  width: 100vw;
+  padding-top: 41px;
+  padding-bottom: 71px;
+}
+
+.h2_title {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.3px;
+}
+
+.blue {
+  color: #00A4E5;
+}
+
+.header_logo {
+  margin: 0 auto;
+  margin-bottom: 305px;
+}
+.header_title {
+  font-family: "Bebas Neue", sans-serif;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 60px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 21px;
+}
+.header_subtitle {
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 221px;
+}
+.header_link {
+  margin: 0 auto;
+  text-align: center;
+}
+.header_link a {
+  color: #fff;
+  font-weight: 700;
+}
+
+.navigation {
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+}
+.navigation_navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  max-width: 412px;
+  width: 100%;
+}
+
+hr {
+  border: 1px solid #E6E6E6;
+  color: #fff;
+}
+
+.about {
+  max-width: 940px;
+  margin: 0 auto;
+  padding-top: 48px;
+}
+.about_title {
+  margin-bottom: 92px;
+  text-align: center;
+}
+.about_content {
+  display: flex;
+  justify-content: space-between;
+}
+.about_article {
+  max-width: 405px;
+  width: 100%;
+  text-align: left;
+}
+.about_steps {
+  display: flex;
+  justify-content: space-between;
+  max-width: 459px;
+  width: 100%;
+}
+
+.article_title {
+  font-weight: 700;
+  margin-bottom: 30px;
+  line-height: 27px;
+}
+.article_text {
+  font-size: 13px;
+  line-height: 23px;
+}
+
+.step {
+  position: relative;
+}
+.step_title {
+  position: absolute;
+  color: #fff;
+  top: 15px;
+  left: 14px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+/*# sourceMappingURL=style.css.map */
