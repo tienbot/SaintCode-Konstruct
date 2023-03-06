@@ -13,49 +13,102 @@
 </head>
 <body>
     <header>
-        <img src="./icons/logo_white.png" class="header_logo" alt="logo_white">
-        <h1 class="header_title">PARTNER WITH KONSTUCT</h1>
-        <p class="header_subtitle">An award-winning construction management firm</p>
-        <p class="header_link">
-            <a href="#">SCROLL DOWN</a>
-        </p>
-        
+        <div class="container" id="home">
+            <img src="./icons/logo_white.png" class="header_logo" alt="logo_white">
+            <h1 class="header_title">PARTNER WITH KONSTUCT</h1>
+            <p class="header_subtitle">An award-winning construction management firm</p>
+            <p class="header_link">
+                <button id="scroll">SCROLL DOWN</button>
+                <!-- <a href="" id="scroll">SCROLL DOWN</a> -->
+            </p>
+        </div>
     </header>
     <nav class="navigation">
-        <a href="#" class="navigation_logo">
+        <a href="#home" id="link_to_home1" class="navigation_logo">
             <img src="./icons/logo_black.png" alt="logo_black">
         </a>
         <ul class="navigation_navbar">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#" class="blue">ABOUT</a></li>
-            <li><a href="#">SERVICES</a></li>
+            <li><a class="link_to_home" href="#home" id="link_to_home2">HOME</a></li>
+            <li><a href="#about" class="blue">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
             <li><a href="#">WORK</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
         </ul>
     </nav>
     <hr>
     <section id="about" class="about">
-        <h2 class="h2_title about_title">OUR STORY</h2>
-        <div class="about_content">
-            <div class="about_article article">
-                <p class="article_title">Founded in 2011 by John Mathew <br>Smith, Konstruct has become the <br>number one construction management</p>
-                <p class="article_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
-            </div>
-            <div class="about_steps">
-                <div class="step">
-                    <p class="step_title">WE <br>PLAN</p>
-                    <img src="./img/plan.jpg" alt="WE PLAN">
+        <div class="container">
+            <h2 class="h2_title about_title">OUR STORY</h2>
+            <div class="about_content">
+                <div class="about_article article">
+                    <p class="article_title">Founded in 2011 by John Mathew <br>Smith, Konstruct has become the <br>number one construction management</p>
+                    <p class="article_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
                 </div>
-                <div class="step">
-                    <p class="step_title">WE <br>MANAGE</p>
-                    <img src="./img/manage.jpg" alt="WE PLAN">
-                </div>
-                <div class="step">
-                    <p class="step_title">WE <br>BUILD</p>
-                    <img src="./img/build.jpg" alt="WE PLAN">
+                <div class="about_steps">
+                    <div class="step">
+                        <p class="step_title">WE <br>PLAN</p>
+                        <img src="./img/plan.jpg" alt="WE PLAN">
+                    </div>
+                    <div class="step">
+                        <p class="step_title">WE <br>MANAGE</p>
+                        <img src="./img/manage.jpg" alt="WE PLAN">
+                    </div>
+                    <div class="step">
+                        <p class="step_title">WE <br>BUILD</p>
+                        <img src="./img/build.jpg" alt="WE PLAN">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <section class="services" id="services">
+        <div class="container">
+            <div class="services_top">
+                <h2 class="h2_title services_title">OUR CAPABILITIES</h2>
+                <div class="services_right">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                    <button class="button">ALL SERVICES</button>
+                </div>
+            </div>
+            <div class="services_bottom">
+                <div class="services_card card">
+                    <img src="./icons/project.png" alt="project">
+                    <p class="card_title">PROJECT AND CONSTRUCTION MANAGEMENT</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                </div>
+                <div class="services_card card">
+                    <img src="./icons/store.png" alt="store">
+                    <p class="card_title">STRUCTURE AUDIT AND MAINTENANCE</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                </div>
+                <div class="services_card card">
+                    <img src="./icons/bank.png" alt="bank">
+                    <p class="card_title">FACTORY CONSTRUCTION AND MODELING</p>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="touch">
+        <div class="container">
+            <p>Want to build something amazing?</p>
+            <button class="button">GET IN TOUCH</button>
+        </div>
+    </section>
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer_form">
+                <p>Newsletter Signup</p>
+                <form action="">
+                    <input type="email" placeholder="test@youremail.com">
+                    <button class="button">SIGNUP</button>
+                </form>
+            </div>
+            <div class="footer_bottom">
+                <p>© 2017 Konstruct Inc. Designed by Jane Kathryn Teo</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
