@@ -1,6 +1,7 @@
 *
     font-family: 'Open Sans', sans-serif
     color: #48555B
+    transition: all 0.5s ease-out
 
 .container
     margin: 0 auto
@@ -52,6 +53,7 @@ header
             background-color: transparent
             color: #fff
             font-weight: 700
+            transition: all 0.5s ease-out
             &:hover
                 cursor: pointer
                 color: #00A4E5
@@ -81,12 +83,18 @@ hr
     border: 1px solid #E6E6E6
     color: #fff
 
+.hr_blue
+    border: 1px solid #00A4E5
+    width: 50px
+    margin-top: 11px
+
 .about
     padding-top: 48px
     margin-bottom: 67px
     &_title
-        margin-bottom: 92px
         text-align: center
+    &_hr
+        margin-bottom: 85px
     &_content
         display: flex
         justify-content: space-between
@@ -134,7 +142,8 @@ hr
     &_title
         max-width: 200px
         width: 100%
-        margin-bottom: 30px
+    &_hr
+        margin-left: 0
     &_right
         max-width: 587px
         width: 100%
@@ -169,6 +178,9 @@ hr
     border: none
     &:hover
         cursor: pointer
+        outline: #00A4E5 1px solid
+        background-color: #fff
+        color: #00A4E5
 
 .card
     max-width: 295px
@@ -187,7 +199,7 @@ hr
     
 .touch
     padding-top: 120px
-    height: 497px
+    height: 499px
     text-align: center
     background-image: url(../img/bg_footer.jpg)
     background-repeat: no-repeat
@@ -241,17 +253,29 @@ hr
             margin-bottom: 20vh
 
     .services
+        margin-bottom: 40px
         &_bottom
             justify-content: space-around
 
+    .touch
+        padding-top: 60px
+
 @media only screen and (max-width: 924px) 
     .about
+        &_hr
+            margin-bottom: 40px
         &_content
             justify-content: center
 
 @media only screen and (max-width: 826px) 
     .services
+        &_hr
+            margin: 0 auto
+            margin-top: 11px
+            margin-bottom: 30px
         &_top
+            justify-content: center
+        &_right
             justify-content: center
 
 @media only screen and (max-width: 614px) 

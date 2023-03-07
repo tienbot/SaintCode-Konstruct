@@ -1,6 +1,7 @@
 * {
   font-family: "Open Sans", sans-serif;
   color: #48555B;
+  transition: all 0.5s ease-out;
 }
 
 .container {
@@ -60,6 +61,7 @@ header {
   background-color: transparent;
   color: #fff;
   font-weight: 700;
+  transition: all 0.5s ease-out;
 }
 .header_link button:hover {
   cursor: pointer;
@@ -94,13 +96,21 @@ hr {
   color: #fff;
 }
 
+.hr_blue {
+  border: 1px solid #00A4E5;
+  width: 50px;
+  margin-top: 11px;
+}
+
 .about {
   padding-top: 48px;
   margin-bottom: 67px;
 }
 .about_title {
-  margin-bottom: 92px;
   text-align: center;
+}
+.about_hr {
+  margin-bottom: 85px;
 }
 .about_content {
   display: flex;
@@ -157,7 +167,9 @@ hr {
 .services_title {
   max-width: 200px;
   width: 100%;
-  margin-bottom: 30px;
+}
+.services_hr {
+  margin-left: 0;
 }
 .services_right {
   max-width: 587px;
@@ -199,6 +211,9 @@ hr {
 }
 .button:hover {
   cursor: pointer;
+  outline: #00A4E5 1px solid;
+  background-color: #fff;
+  color: #00A4E5;
 }
 
 .card {
@@ -221,7 +236,7 @@ hr {
 
 .touch {
   padding-top: 120px;
-  height: 497px;
+  height: 499px;
   text-align: center;
   background-image: url(../img/bg_footer.jpg);
   background-repeat: no-repeat;
@@ -283,17 +298,34 @@ hr {
   .header_subtitle {
     margin-bottom: 20vh;
   }
+  .services {
+    margin-bottom: 40px;
+  }
   .services_bottom {
     justify-content: space-around;
   }
+  .touch {
+    padding-top: 60px;
+  }
 }
 @media only screen and (max-width: 924px) {
+  .about_hr {
+    margin-bottom: 40px;
+  }
   .about_content {
     justify-content: center;
   }
 }
 @media only screen and (max-width: 826px) {
+  .services_hr {
+    margin: 0 auto;
+    margin-top: 11px;
+    margin-bottom: 30px;
+  }
   .services_top {
+    justify-content: center;
+  }
+  .services_right {
     justify-content: center;
   }
 }

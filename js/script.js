@@ -1,7 +1,7 @@
 let body = document.querySelector('body');
 let scroll = document.querySelector('#scroll');
-let home1 = document.querySelector('#link_to_home1');
-let home2 = document.querySelector('#link_to_home2');
+let logo = document.querySelector('#link_to_home1');
+let home = document.querySelector('#link_to_home2');
 
 // body.style.overflow = 'hidden';
 
@@ -10,12 +10,12 @@ scroll.onclick = function() {
     document.querySelector('header').style.display = "none";
 };
 
-home1.onclick = function() {
+logo.onclick = function() {
     document.querySelector('header').style.display = "block";
     body.style.overflow = 'hidden';
 };
 
-home2.onclick = function() {
+home.onclick = function() {
     document.querySelector('header').style.display = "block";
     body.style.overflow = 'hidden';
 };
