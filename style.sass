@@ -8,17 +8,6 @@
     max-width: 980px
     padding: 0 20px
 
-header
-    background-image: url(../img/bg_header.jpg)
-    background-repeat: no-repeat
-    background-position: center
-    background-size: cover
-    margin: 0 auto
-    height: 100vh
-    width: 100vw
-    padding-top: 41px
-    padding-bottom: 71px
-
 .h2_title
     font-size: 18px
     font-weight: 700
@@ -29,9 +18,24 @@ header
     color: #00A4E5
 
 .header
+    background-image: url(../img/bg_header.jpg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    margin: 0 auto
+    height: 100vh
+    width: 100vw
+    padding-top: 41px
+    padding-bottom: 71px
+    &_container
+        display: flex
+        height: 100%
+        flex-direction: column
+        justify-content: space-between
+
     &_logo
         margin: 0 auto
-        margin-bottom: 305px
+        // margin-bottom: 305px
     &_title
         font-family: 'Bebas Neue', sans-serif
         text-transform: uppercase
@@ -44,7 +48,7 @@ header
         font-weight: 700
         text-align: center
         color: #fff
-        margin-bottom: 221px
+        // margin-bottom: 221px
     &_link
         margin: 0 auto
         text-align: center
@@ -90,7 +94,7 @@ hr
 
 .about
     padding-top: 48px
-    margin-bottom: 67px
+    margin-bottom: 37px
     &_title
         text-align: center
     &_hr
@@ -133,6 +137,7 @@ hr
         line-height: 29px
 
 .services
+    padding-top: 30px
     margin-bottom: 85px
     &_top
         display: flex
@@ -245,12 +250,7 @@ hr
             font-weight: 400
             font-size: 11px
 
-@media only screen and (max-width: 924px)
-    .header
-        &_logo
-            margin-bottom: 30vh
-        &_subtitle
-            margin-bottom: 20vh
+@media only screen and (max-width: 924px) 
 
     .services
         margin-bottom: 40px
@@ -260,12 +260,15 @@ hr
     .touch
         padding-top: 60px
 
-@media only screen and (max-width: 924px) 
     .about
         &_hr
             margin-bottom: 40px
         &_content
             justify-content: center
+    
+    .article
+        &_title
+            text-align: center
 
 @media only screen and (max-width: 826px) 
     .services
