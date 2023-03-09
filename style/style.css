@@ -2,6 +2,7 @@
   font-family: "Open Sans", sans-serif;
   color: #48555B;
   transition: all 0.5s ease-out;
+  scroll-behavior: smooth;
 }
 
 .container {
